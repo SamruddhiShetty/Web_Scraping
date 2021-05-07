@@ -1,0 +1,73 @@
+What is web scraping
+visit: https://www.imperva.com/learn/application-security/web-scraping-attack/
+
+Web scraping is the process of using bots to extract content and data from a website.
+
+Unlike screen scraping, which only copies pixels displayed onscreen, web scraping extracts underlying HTML code and, with it, data stored in a database. The scraper can then replicate entire website content elsewhere.
+
+Web scraping is used in a variety of digital businesses that rely on data harvesting. Legitimate use cases include:
+
+Search engine bots crawling a site, analyzing its content and then ranking it.
+Price comparison sites deploying bots to auto-fetch prices and product descriptions for allied seller websites.
+Market research companies using scrapers to pull data from forums and social media (e.g., for sentiment analysis).
+Web scraping is also used for illegal purposes, including the undercutting of prices and the theft of copyrighted content. An online entity targeted by a scraper can suffer severe financial losses, especially if it’s a business strongly relying on competitive pricing models or deals in content distribution.
+
+Scraper tools and bots
+Web scraping tools are software (i.e., bots) programmed to sift through databases and extract information. A variety of bot types are used, many being fully customizable to:
+
+Recognize unique HTML site structures
+Extract and transform content
+Store scraped data
+Extract data from APIs
+Since all scraping bots have the same purpose—to access site data—it can be difficult to distinguish between legitimate and malicious bots.
+
+That said, several key differences help distinguish between the two.
+
+Legitimate bots are identified with the organization for which they scrape. For example, Googlebot identifies itself in its HTTP header as belonging to Google. Malicious bots, conversely, impersonate legitimate traffic by creating a false HTTP user agent.
+Legitimate bots abide a site’s robot.txt file, which lists those pages a bot is permitted to access and those it cannot. Malicious scrapers, on the other hand, crawl the website regardless of what the site operator has allowed.
+Resources needed to run web scraper bots are substantial—so much so that legitimate scraping bot operators heavily invest in servers to process the vast amount of data being extracted.
+
+A perpetrator, lacking such a budget, often resorts to using a botnet—geographically dispersed computers, infected with the same malware and controlled from a central location. Individual botnet computer owners are unaware of their participation. The combined power of the infected systems enables large scale scraping of many different websites by the perpetrator.
+
+
+
+What is web scraping
+Web scraping is the process of using bots to extract content and data from a website.
+
+Unlike screen scraping, which only copies pixels displayed onscreen, web scraping extracts underlying HTML code and, with it, data stored in a database. The scraper can then replicate entire website content elsewhere.
+
+Web scraping is used in a variety of digital businesses that rely on data harvesting. Legitimate use cases include:
+
+Search engine bots crawling a site, analyzing its content and then ranking it.
+Price comparison sites deploying bots to auto-fetch prices and product descriptions for allied seller websites.
+Market research companies using scrapers to pull data from forums and social media (e.g., for sentiment analysis).
+Web scraping is also used for illegal purposes, including the undercutting of prices and the theft of copyrighted content. An online entity targeted by a scraper can suffer severe financial losses, especially if it’s a business strongly relying on competitive pricing models or deals in content distribution.
+
+Scraper tools and bots
+Web scraping tools are software (i.e., bots) programmed to sift through databases and extract information. A variety of bot types are used, many being fully customizable to:
+
+Recognize unique HTML site structures
+Extract and transform content
+Store scraped data
+Extract data from APIs
+Since all scraping bots have the same purpose—to access site data—it can be difficult to distinguish between legitimate and malicious bots.
+
+That said, several key differences help distinguish between the two.
+
+Legitimate bots are identified with the organization for which they scrape. For example, Googlebot identifies itself in its HTTP header as belonging to Google. Malicious bots, conversely, impersonate legitimate traffic by creating a false HTTP user agent.
+Legitimate bots abide a site’s robot.txt file, which lists those pages a bot is permitted to access and those it cannot. Malicious scrapers, on the other hand, crawl the website regardless of what the site operator has allowed.
+Resources needed to run web scraper bots are substantial—so much so that legitimate scraping bot operators heavily invest in servers to process the vast amount of data being extracted.
+
+A perpetrator, lacking such a budget, often resorts to using a botnet—geographically dispersed computers, infected with the same malware and controlled from a central location. Individual botnet computer owners are unaware of their participation. The combined power of the infected systems enables large scale scraping of many different websites by the perpetrator.
+
+Web scraping protection
+The increased sophistication in malicious scraper bots has rendered some common security measures ineffective. For example, headless browser bots can masquerade as humans as they fly under the radar of most mitigation solutions.
+
+To counter advances made by malicious bot operators, Imperva uses granular traffic analysis. It ensures that all traffic coming to your site, human and bot alike, is completely legitimate.
+
+The process involves the cross verification of factors, including:
+
+HTML fingerprint – The filtering process starts with a granular inspection of HTML headers. These can provide clues as to whether a visitor is a human or bot, and malicious or safe. Header signatures are compared against a constantly updated database of over 10 million known variants.
+IP reputation – We collect IP data from all attacks against our clients. Visits from IP addresses having a history of being used in assaults are treated with suspicion and are more likely to be scrutinized further.
+Behavior analysis – Tracking the ways visitors interact with a website can reveal abnormal behavioral patterns, such as a suspiciously aggressive rate of requests and illogical browsing patterns. This helps identify bots that pose as human visitors.
+Progressive challenges – We use a set of challenges, including cookie support and JavaScript execution, to filter out bots and minimize false positives. As a last resort, a CAPTCHA challenge can weed out bots attempting to pass themselves off as humans.
